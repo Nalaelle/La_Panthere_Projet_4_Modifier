@@ -8,7 +8,7 @@ body {
 a,
 button {
     transition: all .3s ease-in-out;
-    outline: none!important;
+    /* outline: none!important; */
 }
 
 a:hover {
@@ -451,9 +451,9 @@ nav .caret {
     background: rgba(0, 0, 0, .3);
 }
 
-button {
+/* button {
     outline: none!important;
-}
+} */
 
 .btn-rd {
     border-radius: 40px;
@@ -640,7 +640,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #000000;
 }
 
 .container {
@@ -712,11 +712,11 @@ h3 {
 }
 
 h1 {
-    color: #333333!important;
+    color: #000!important;
 }
 
 h4 {
-    color: #333333!important;
+    color: #000!important;
 }
 
 .icons {
@@ -742,7 +742,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: #000;
     padding: 40px 40px 40px 40px;
 }
 
@@ -764,7 +764,7 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #fff!important;
 }
 
 .btn-atomic-tangerine {
@@ -1018,9 +1018,10 @@ h4 {
     }
 }
 
+
 /* ************************   Ajout de style *********************************** */
 header {
-    padding: 30px 0; /* .bloc padding l28 */
+    padding: 30px 40px; /* .bloc padding l28 */
 }
 
 .titleOne {
@@ -1033,6 +1034,7 @@ header {
     text-align: center;
     font-size: 20px;
     color: #000000;
+    margin-top: 40px;
 }
 
 .citation > cite {
@@ -1065,4 +1067,17 @@ header {
 
 .social > .fa:hover {
     color: #000!important;
+}
+
+*:focus {
+    border: 1px solid red;
+    outline: solid!important;
+}
+
+h1:focus {
+    border: 2px solid black;
+}
+
+.bloc:focus {
+    outline: solid green;
 }
