@@ -72,7 +72,7 @@ a:hover {
     background: top no-repeat;
 }
 
-/* .bloc-bg-texture::before {
+.bloc-bg-texture::before {
     content: "";
     background-size: 2px 2px;
     position: absolute;
@@ -80,12 +80,12 @@ a:hover {
     bottom: 0;
     left: 0;
     right: 0;
-} */
+}
 
-/* .texture-paper::before {
+.texture-paper::before {
     background: url("img/texture-paper.png");
     background-size: 280px 280px;
-} */
+}
 
 .b-parallax {
     background-attachment: fixed;
@@ -327,6 +327,7 @@ a:hover {
 .nav > li a:hover,
 .nav > li a:focus {
     background: transparent;
+    /* color: #000!important; */
 }
 
 .navbar-toggle {
@@ -502,7 +503,7 @@ nav .caret {
 }
 
 .scrollToTop {
-    width: 40px;
+    width: 80px;
     height: 40px;
     position: fixed;
     bottom: 20px;
@@ -765,7 +766,7 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #712C09;
+    background-color: #C44A12;
 }
 
 .tc-white {
@@ -773,7 +774,7 @@ h4 {
 }
 
 .btn-atomic-tangerine {
-    background: #712C09;
+    background: #C44A12;
     color: #FFFFFF!important;
 }
 
@@ -791,11 +792,11 @@ h4 {
 }
 
 .ltc-atomic-tangerine {
-    color: #712C09!important;
+    color: #C44A12!important;
 }
 
 .ltc-atomic-tangerine:hover {
-    color: #712C09!important;
+    color: #C44A12!important;
 }
 
 .icon-dark-slate-blue {
@@ -810,6 +811,8 @@ h4 {
 
 .bg-banniere {
     background-image: url("img/agence-la-panthere.jpg");
+    background-position: center;
+    /* modif position image pour une meilleur visibilité du titre */
 }
 
 .bg-presentation {
@@ -914,7 +917,7 @@ h4 {
         padding-left: 15px;
         width: 100%;
     }
-    .nav > li:hover {
+    .nav > li > a:hover {
         background: rgba(0, 0, 0, .08);
     }
     .dropdown .dropdown a .caret {
@@ -1027,6 +1030,13 @@ h4 {
 /* ************************   Ajout de style *********************************** */
 header {
     padding: 30px 40px; /* .bloc padding l28 */
+}
+
+.title {
+    color: #C44A12!important;
+    font-weight: 600;
+    padding-top: 15px;
+    filter: brightness(130%);
 }
 
 .titleOne {
