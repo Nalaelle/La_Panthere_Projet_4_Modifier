@@ -689,10 +689,6 @@ p {
     font-weight: 700;
 }
 
-.social {
-    max-width: 400px;
-    margin: auto auto auto auto;
-}
 
 h2 {
     font-size: 22px;
@@ -1065,19 +1061,29 @@ header {
 }
 
 /* ***** */
+@media (max-width: 768px) {
+    .row-no-gutters {
+        flex-direction: column;
+    }
+}
 
-.social {
+.row-no-gutters {
     display: flex;
+    align-items: center;
+    margin: 0;
 }
 
 .social > span {
     color: #FFF!important;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .col-sm-3 {
     display: grid;
     place-items: center;
-    width: 25%;
+    margin: 30px;
 }
 
 .social > .fa:hover {
